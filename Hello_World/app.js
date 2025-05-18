@@ -1,0 +1,1 @@
+console.log("Message sent from ground zero of the third impact.");
