@@ -1,6 +1,12 @@
 const express = require('express')
 const app = express()
-const port = 8080 // port -> hardcoded
+require('dotenv').config()
+
+// Check if the environment variables are loaded
+// console.log('>>> check env: ', process.env)
+
+const port = process.env.PORT|| 3000;
+const hostname = process.env.HOST_NAME;
 
 // Congif template engine
 app.set('views', './src/views')
@@ -21,6 +27,6 @@ app.get('/wtf2', (req, res) => {
   res.render('sample.ejs')
 })
 
-app.listen(port, () => {
+app.listen(port, hostname, () => {
   console.log(`Example app listening on port ${port}`)
 })

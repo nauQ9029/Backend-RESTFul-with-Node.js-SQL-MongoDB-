@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/nauQ9029/Backend-RESTFul-with-Node.js-SQL-MongoDB-#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
   }
